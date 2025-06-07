@@ -2,14 +2,18 @@ import * as robot from 'robotjs';
 
 // Function to simulate typing text
 function typeText(text: string, delay: number = 100): void {
-    // Split the text into individual characters
-    const characters = text.split('');
+    const lines = text.split('\n');
     
-    // Type each character with a delay
-    characters.forEach((char) => {
-        robot.typeString(char);
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        robot.typeString(line);
         robot.setKeyboardDelay(delay);
-    });
+        
+        if (i < lines.length - 1) {
+            robot.keyTap('enter');
+            robot.setKeyboardDelay(delay);
+        }
+    }
 }
 
 // Function to start auto-typing
@@ -19,7 +23,15 @@ function startAutoTyping(): void {
     
     // Wait for 5 seconds before starting
     setTimeout(() => {
-        const textToType = "This is an automatically typed text. You can modify this text in the code.";
+        const textToType = `def example_function():
+    # This is an indented comment
+    if True:
+        print("This is indented code")
+        for i in range(5):
+            print(f"Number: {i}")
+    
+    return "Done"`;
+        
         console.log('Starting to type...');
         typeText(textToType);
         console.log('Finished typing!');
