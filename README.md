@@ -66,3 +66,7 @@ The executable will be generated in the `dist` folder within your project direct
 ## Note
 
 This program uses `pyautogui` for simulating keyboard presses, which requires accessibility permissions on some operating systems (e.g., macOS). 
+
+---
+
+© 2024 Aspirinexar. All rights reserved. 
