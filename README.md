@@ -1,7 +1,8 @@
-![Typink Logo](typink-logo.png)
+
 
 
 # Typink - Auto Typing Tool
+![Typink Logo](assets/images/typink-logo.png)
 
 A simple program that automatically types text at the current cursor position, featuring a modern UI built with CustomTkinter.
 
