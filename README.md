@@ -1,4 +1,5 @@
-![Typink Logo](Typink logo.png)
+![Typink Logo](typink-logo.png)
+
 
 # Typink - Auto Typing Tool
 
