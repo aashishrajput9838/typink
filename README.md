@@ -1,76 +1,68 @@
-hello guys !
+<div align="center">
+  <img src="assets/images/Typink%20logo.png" alt="Typink Logo" width="200"/>
+  <h1>Typink</h1>
+  <p><strong>A modern, elegant auto-typing tool built with CustomTkinter</strong></p>
+  
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/CustomTkinter-UI-green?style=for-the-badge" alt="CustomTkinter" />
+    <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge" alt="Platform" />
+  </p>
+</div>
 
+---
 
-# Typink - Auto Typing Tool
-![Typink Logo](assets/images/Typink%20logo.png)
+## ⚡ Overview
+**Typink** is a simple yet powerful desktop application designed to automatically type text at your current cursor position. Whether you're filling out repetitive forms, testing inputs, or writing boilerplate code, Typink automates the process while maintaining a beautiful and responsive user interface.
 
+## ✨ Key Features
+- 🚀 **Auto-Typing**: Seamlessly types any block of text precisely where your cursor is placed.
+- 🎛️ **Precision Speed Control**: Adjust the typing delay with **1ms increments** via slider or arrow keys.
+- ⏸️ **Smart Pause & Resume**: Stop at any time and resume effortlessly. Includes a **5-second countdown** so you can perfectly reposition your cursor.
+- 🪟 **Always-on-Top Floating Widget**: A compact, draggable control window with adjustable transparency (1% - 100%) that stays above other apps.
+- 🎨 **Modern Aesthetics**: A sleek, dark-mode ready interface powered by CustomTkinter.
+- 📝 **Formatting Preserved**: Accurately maintains all your original indentation and line breaks.
 
+## 🛠️ Installation
 
-A simple program that automatically types text at the current cursor position, featuring a modern UI built with CustomTkinter.
+### Prerequisites
+Make sure you have [Python 3.x](https://www.python.org/downloads/) installed on your machine.
 
-## Features
+### Quick Start
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/aashishrajput9838/typink.git
+   cd typink
+   ```
+2. **Install dependencies:**
+   ```bash
+   pip install customtkinter pyautogui
+   ```
+3. **Run Typink:**
+   ```bash
+   python main.py
+   ```
 
--   **Auto-Typing**: Types text at the current cursor position.
--   **Customizable Speed**: Adjust the typing speed (delay between characters) with **1ms increments** using a slider or **left/right arrow keys**.
--   **Modern UI**: Beautiful and responsive user interface with CustomTkinter.
--   **Indentation Support**: Preserves indentation and line breaks when typing.
--   **Real-time Progress Bar**: Visual feedback on typing progress.
--   **Pause/Resume Functionality**:
-    -   Pause typing at any point and resume from the exact position.
-    -   Includes a **5-second countdown** before resuming to allow cursor repositioning.
--   **Floating Control Window**:
-    -   A dedicated compact window with Start, Pause/Resume, and Stop buttons that stays **always on top of other applications**.
-    -   **Adjustable Transparency**: Control the floating window's visibility from **1% to 100%** using a dedicated slider or **left/right arrow keys (5% increments)**.
-    -   Features a **sleek, transparent border** (OS-native) and is **draggable by its title bar**.
+## 🎮 How to Use
+1. **Prepare Text:** Enter or paste the content you want to type into the main text box.
+2. **Set Speed:** Adjust the typing speed (delay between keystrokes in ms). Use the slider or your keyboard's `←` / `→` arrows for precise tuning.
+3. **Start:** Click **"Start Typing"**. You will have 5 seconds to switch to your target application and click where you want the text to appear.
+4. **Float Mode:** Click **"Float"** to spawn the transparent, always-on-top mini controller.
+5. **Control Flow:** Use the Pause/Resume and Stop buttons from either the main app or the floating widget as needed.
 
-## Prerequisites
-
--   Python 3.x
-
-## Installation
-
-1.  Clone this repository or download the files.
-2.  Navigate to the project directory:
-    ```bash
-    cd Typink
-    ```
-3.  Install the required Python packages:
-    ```bash
-    pip install customtkinter pyautogui
-    ```
-
-## Usage
-
-1.  Run the application:
-    ```bash
-    python main.py
-    ```
-2.  Enter the text you want to type into the text box.
-3.  Adjust the typing speed using the slider or the **left/right arrow keys (±1ms)**.
-4.  Click the "Start Typing" button.
-5.  You will have 5 seconds to switch to your target application (e.g., a text editor, IDE, or browser) and place your cursor where you want the text to be typed.
-6.  To **pause** typing, click the "Pause" button. To **resume** from where you left off, click the "Resume" button (a 5-second countdown will precede resumption).
-7.  To stop typing at any time, click the "Stop Typing" button.
-8.  Click the **"Float"** button to open the floating control window. You can drag this window by its title bar and adjust its transparency using the slider or arrow keys within that window.
-
-## Building Executable
-
-You can compile the application into a standalone executable (`.exe`) file using PyInstaller:
+## 📦 Building an Executable
+Want to run Typink without Python? You can easily compile it into a standalone `.exe` file using PyInstaller:
 
 ```bash
 pyinstaller --onefile --windowed --name Typink main.py
 ```
-The executable will be generated in the `dist` folder within your project directory.
+> The compiled executable will be located in the newly created `dist/` folder.
 
-## Customization
-
--   To change the default text to be typed, modify the `text_input` content in `main.py`.
--   To change the default typing speed, adjust the `delay_slider.set()` value in `main.py`.
-
-## Note
-
-This program uses `pyautogui` for simulating keyboard presses, which requires accessibility permissions on some operating systems (e.g., macOS). 
+## ⚠️ Important Note
+Typink utilizes `pyautogui` to simulate keyboard inputs. Depending on your operating system (especially macOS), you may need to grant **accessibility permissions** to your terminal or IDE for the automation to work properly.
 
 ---
-
-© 2024 Aspirinexar. All rights reserved. 
+<div align="center">
+  <p>Built with ❤️ by <a href="https://github.com/aashishrajput9838">Aspirinexar</a></p>
+  <p>&copy; 2024 Aspirinexar. All rights reserved.</p>
+</div>
